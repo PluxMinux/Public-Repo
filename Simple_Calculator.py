@@ -1,4 +1,17 @@
 ## Simple Calculator ##
+#Input two values, select operator and it will show the result.
+
+def s_calculator(f_input,s_input):
+    if operator == "1":
+        return f_input + s_input
+    elif operator == "2": 
+        return f_input - s_input
+    elif operator == "3":
+        return f_input * s_input
+    elif operator == "4":
+        return f_input / s_input
+    else:
+        print("ERROR: Invalid Operator.")
 
 f_value = int(input("Enter First Value: "))
 s_value = int(input("Enter Second value: "))
@@ -10,20 +23,7 @@ print("Press 3 for Multiplication.")
 print("Press 4 for Division.")
 operator = input("Select: ")
 
-if operator == "1":
-    print("\nAnswer:", f_value + s_value)
-elif operator == "2": 
-    print("\nAnswer:", f_value - s_value)
-elif operator == "3":
-    print("\nAnswer:", f_value * s_value)
-elif operator == "4":
-    print("\nAnswer:", f_value / s_value)
-else:
-    print("ERROR: Invalid Operator.")
-
-
-
-
+print("\nAnswer: ",s_calculator(f_value,s_value))
 
 
 input("Press enter to exit.")
